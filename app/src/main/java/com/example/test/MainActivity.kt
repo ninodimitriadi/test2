@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         signList.add(Sign(12, "https://www.vhv.rs/dpng/d/456-4562122_pisces-zodiac-astrological-sign-symbol-pisces-png-transparent.png", "თევზები"))
 
         val signAdapter = SignAdapter(signList)
-        recyclerView.layoutManager = GridLayoutManager(this, 2)
+        recyclerView.layoutManager = GridLayoutManager(this, 1)
         recyclerView.adapter = signAdapter
     }
 }
