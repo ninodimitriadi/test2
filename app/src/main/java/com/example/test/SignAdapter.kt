@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import kotlin.math.sign
 
 class SignAdapter(private  val sign: List<Sign>)
     : RecyclerView.Adapter<SignAdapter.SignViewHolder>() {
@@ -14,12 +15,12 @@ class SignAdapter(private  val sign: List<Sign>)
         class SignViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
             val imageView: ImageView = itemView.findViewById(R.id.imageView)
+            val textView: TextView = itemView.findViewById(R.id.SignName)
 
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SignViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.sign_item, parent, false)
-        val sNameTextView: TextView = view.findViewById(R.id.SignName)
         return SignViewHolder(view)
     }
 
@@ -27,7 +28,11 @@ class SignAdapter(private  val sign: List<Sign>)
 
         val s = sign[position]
         val currentUrl: String = s.url
-        val sNameTextView: String = s.name
+        val sName: String = s.name
+
+        holder.textView.text = sName
+
+
 
 
         Glide.with(holder.imageView.context)
