@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recyclerView = findViewById(R.id.listView)
+        recyclerView = findViewById(R.id.recyclerView)
 
         val signList = ArrayList<Sign>()
         signList.add(Sign(1,"https://www.vhv.rs/dpng/d/454-4542043_aries-png-aries-zodiac-sign-png-transparent-png.png", "ვერძი"))
@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
         signList.add(Sign(4, "https://www.pngfind.com/pngs/m/47-476797_drawn-crab-cancer-crab-cancer-zodiac-sign-png.png", "კირჩხიბი"))
         signList.add(Sign(5, "https://www.pngkey.com/png/detail/175-1756560_primary-logo-leo-black-icon-astrological-sign-leo.png", "ლომი"))
         signList.add(Sign(6, "https://www.kindpng.com/picc/m/487-4877374_virgo-zodiac-sign-logo-hd-png-download.png", "ქალწული"))
-        signList.add(Sign(7, "https://st2.depositphotos.com/1029842/5538/v/600/depositphotos_55382459-stock-illustration-astrological-zodiac-sign-libra-part.jpg", "სასწორი"))
-        signList.add(Sign(8, "https://st2.depositphotos.com/1029842/5538/v/600/depositphotos_55382615-stock-illustration-astrological-zodiac-sign-scorpius-part.jpg", "მორიელი"))
-        signList.add(Sign(9, "https://st2.depositphotos.com/1029842/5538/v/600/depositphotos_55382635-stock-illustration-astrological-zodiac-sign-sagittarius-part.jpg", "შვილდოსანი"))
+        signList.add(Sign(7, "https://c0.klipartz.com/pngpicture/300/290/gratis-png-icono-astrologico-del-signo-zodiacal-de-libra-libra.png", "სასწორი"))
+        signList.add(Sign(8, "https://c0.klipartz.com/pngpicture/316/492/gratis-png-escorpio-signo-astrologico-astrologia-zodiaco-simbolos-astrologicos-escorpio.png", "მორიელი"))
+        signList.add(Sign(9, "https://www.hitsfm.com.np/wordpress/wp-content/uploads/2016/11/sagittarius.png", "შვილდოსანი"))
         signList.add(Sign(10, "https://e7.pngegg.com/pngimages/181/476/png-clipart-capricorn-astrological-sign-astrology-zodiac-cancer-capricorn-love-horse.png", "თხის რქა"))
         signList.add(Sign(11, "https://lh3.googleusercontent.com/proxy/hUSSFBy5bsV6AwTmDfoCdnVDQLiB_eJb_I-hOX2dbM7dankRr12DbamNKKjzDgZGboLiSYlWbqvtZ7a0YIC0MXfyW5oqx2YR7gZHOlfNaoNNRH5wR1lLn7lA", "მერწყული"))
         signList.add(Sign(12, "https://www.vhv.rs/dpng/d/456-4562122_pisces-zodiac-astrological-sign-symbol-pisces-png-transparent.png", "თევზები"))
